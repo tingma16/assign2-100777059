@@ -8,8 +8,9 @@
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
+
 function twentytwentyonechild_wp_enqueue_scripts() {
-    $parenthandle = 'twenty-twenty-one-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $parenthandle = 'twenty-twenty-one-style'; // This is 'twenty-twenty-one-style' for the Twenty twenty-one theme.
     $theme = wp_get_theme();
     wp_enqueue_style( 
         $parenthandle, 
@@ -24,6 +25,7 @@ function twentytwentyonechild_wp_enqueue_scripts() {
         $theme->get('Version') // this only works if you have Version in the style header
     );
 }
+
 
 add_action( 'wp_enqueue_scripts', 'twentytwentyonechild_wp_enqueue_scripts' );
 
