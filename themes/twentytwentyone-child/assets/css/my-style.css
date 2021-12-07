@@ -4,6 +4,9 @@
 .site-main{
     border: oldlace;
 }
+.site-tittle a{
+    font-weight: 800;
+}
 .site-description{
     color:orange;
 }
@@ -17,6 +20,12 @@
 #post-52{
     margin-top: -4rem;
 }
-main{
-    width:100%;
+a{
+    color:orange;
+}
+h3{
+    color:orange;
+}
+footer .site-name{
+    display: none;
 }
