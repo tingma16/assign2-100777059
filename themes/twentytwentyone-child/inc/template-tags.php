@@ -3,18 +3,18 @@
 *loading custom theme template tags
 */
 
-function cunstom_wp_query(){
+function custom_wp_query(){
   
-    $test_args = array(
+    $post_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'posts_per_page' => 3,
     );
 
-    $test_query = new WP_Query( $post_args );
+    $post_query = new WP_Query( $post_args );
    
 
-	if( $test_query -> have_posts() ){
+	if( $post_query -> have_posts() ){
         ?>
         <div class="post-query">
          
@@ -37,3 +37,4 @@ function cunstom_wp_query(){
         
     }
 }
+?>

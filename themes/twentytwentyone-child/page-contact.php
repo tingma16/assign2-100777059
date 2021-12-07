@@ -12,6 +12,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
+
 get_header();
 
 /* Start the Loop */
@@ -24,5 +25,9 @@ while ( have_posts() ) :
 		comments_template();
 	}
 endwhile; // End of the loop.
+?>
 
+<?php
+custom_wp_query();
 get_footer();
+?>

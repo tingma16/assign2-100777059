@@ -21,12 +21,12 @@ function twentytwentyonechild_wp_enqueue_scripts() {
     wp_enqueue_style( 
         'twentytwentyonechild-style', 
         get_stylesheet_uri(),
-        array( $parenthandle ),gai 
+        array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
     );
 
     wp_enqueue_style( 
-        'custom-css-style', 
+        'my-style', 
         get_stylesheet_directory_uri() . '/assets/css/my-style.css', 
     );
 }
