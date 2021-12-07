@@ -29,3 +29,19 @@ h3{
 footer .site-name{
     display: none;
 }
+.page-numbers current{
+    color:red;
+}
+.entry-header{
+    display:none;
+}
+.wp-block-site-logo{
+    text-align: right;
+}
+.sharedaddy{
+    text-align: right;
+}
+.edit-link{
+    text-align: right;
+    color:orange;
+}
