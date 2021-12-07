@@ -21,9 +21,10 @@ function twentytwentyonechild_wp_enqueue_scripts() {
     wp_enqueue_style( 
         'twentytwentyonechild-style', 
         get_stylesheet_uri(),
-        array( $parenthandle ),
+        array( $parenthandle ),gai 
         $theme->get('Version') // this only works if you have Version in the style header
     );
+
     wp_enqueue_style( 
         'custom-css-style', 
         get_stylesheet_directory_uri() . '/assets/css/my-style.css', 
@@ -32,5 +33,10 @@ function twentytwentyonechild_wp_enqueue_scripts() {
 
 
 add_action( 'wp_enqueue_scripts', 'twentytwentyonechild_wp_enqueue_scripts' );
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_stylesheet_directory() . '/inc/template-tags.php';
 
 ?>

@@ -21,7 +21,10 @@ while ( have_posts() ) :
 	if ( comments_open() || get_comments_number() ) {
 		comments_template();
 	}
+
+
 endwhile; // End of the loop.
+?>
 
 
- get_footer(); ?>
+ <?php get_footer(); ?>
