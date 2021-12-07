@@ -4,3 +4,19 @@
 .site-main{
     border: oldlace;
 }
+.site-description{
+    color:orange;
+}
+.page-title{
+    font-size:3rem;
+    display:none;
+}
+.page-header{
+    display:none;
+}
+#post-52{
+    margin-top: -4rem;
+}
+main{
+    width:100%;
+}
